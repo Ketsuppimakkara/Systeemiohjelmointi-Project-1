@@ -97,6 +97,7 @@ int main(int argc, char* argv[])
     FILE *oFile;
     switch(argc){
         case 1:
+            printf("Type something (Ctrl-D to stop):\n");
             if (read_lines(&line, stdin) == -1)
                 exit(1);
             print_lines(line, stdout);
